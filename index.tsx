@@ -3,10 +3,11 @@ import FloatingLabelInput, {
   CustomLabelProps,
   Props as FloatingLabelProps,
   SetGlobalStyles as SetGlobalStylesProps,
+  InputRef as FloatingInputRef,
 } from './src';
 
 export { FloatingLabelInput, setGlobalStyles };
-export type { CustomLabelProps, FloatingLabelProps, SetGlobalStylesProps };
+export type { CustomLabelProps, FloatingLabelProps, SetGlobalStylesProps, FloatingInputRef };
 
 // /**
 //  * @format
