@@ -196,7 +196,6 @@ const FloatingLabelInput: React.ForwardRefRenderFunction<InputRef, Props> = (
     multiline,
     showPasswordImageStyles,
     value = '',
-    onSelectionChange,
     animationDuration,
     ...rest
   },
