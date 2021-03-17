@@ -149,9 +149,10 @@ const setGlobalStyles: SetGlobalStyles = {
   showCountdownStyles: undefined as TextStyle | undefined,
 };
 
-interface InputRef {
+export interface InputRef {
   focus(): void;
   blur(): void;
+  setNativeProps: (props: object) => void;
 }
 
 const AnimatedText = Animated.createAnimatedComponent(Text);
@@ -196,7 +197,6 @@ const FloatingLabelInput: React.ForwardRefRenderFunction<InputRef, Props> = (
     multiline,
     showPasswordImageStyles,
     value = '',
-    onSelectionChange,
     animationDuration,
     ...rest
   },
@@ -299,6 +299,9 @@ const FloatingLabelInput: React.ForwardRefRenderFunction<InputRef, Props> = (
     },
     blur() {
       inputRef.current.blur();
+    },
+    setNativeProps: (props: object) => {
+      inputRef.current.setNativeProps(props);
     },
   }));
 
