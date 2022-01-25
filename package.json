@@ -39,14 +39,14 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-reanimated": "*"
+    "react-native-reanimated": "^2.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^1.0.0",
     "@types/jest": "^24.0.24",
-    "@types/react-native": "^0.62.0",
+    "@types/react-native": "^0.66.15",
     "@types/react-test-renderer": "16.9.2",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
@@ -62,7 +62,10 @@
     "metro-react-native-babel-preset": "^0.58.0",
     "prettier": "^2.0.5",
     "react-test-renderer": "16.11.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "react-native-reanimated": "^2.3.1",
+    "react-native-gesture-handler": "^2.2.0",
+    "@types/react": "16.9.32"
   },
   "bugs": {
     "url": "https://github.com/Cnilton/react-native-floating-label-input/issues"

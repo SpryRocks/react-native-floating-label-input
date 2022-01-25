@@ -343,6 +343,7 @@ const FloatingLabelInput: React.ForwardRefRenderFunction<InputRef, Props> = (
           duration: animationDuration ? animationDuration : 300,
           easing: EasingNode.linear,
         }),
+        // @ts-ignore
         timing(fontColorAnimated, {
           toValue: 1,
           duration: animationDuration ? animationDuration : 300,
@@ -392,6 +393,7 @@ const FloatingLabelInput: React.ForwardRefRenderFunction<InputRef, Props> = (
           duration: animationDuration ? animationDuration : 300,
           easing: EasingNode.linear,
         }),
+        // @ts-ignore
         timing(fontColorAnimated, {
           toValue: 1,
           duration: animationDuration ? animationDuration : 300,
@@ -434,6 +436,7 @@ const FloatingLabelInput: React.ForwardRefRenderFunction<InputRef, Props> = (
           duration: animationDuration ? animationDuration : 300,
           easing: EasingNode.linear,
         }),
+        // @ts-ignore
         timing(fontColorAnimated, {
           toValue: 0,
           duration: animationDuration ? animationDuration : 300,
@@ -510,10 +513,13 @@ const FloatingLabelInput: React.ForwardRefRenderFunction<InputRef, Props> = (
       : !isFocusedState
       ? customLabelStyles.fontSizeBlurred
       : customLabelStyles.fontSizeFocused,
+    // @ts-ignore
     color: interpolateColors(fontColorAnimated, {
       inputRange: [0, 1],
       outputColorRange: [
+        // @ts-ignore
         customLabelStyles.colorBlurred,
+        // @ts-ignore
         customLabelStyles.colorFocused,
       ],
     }),
